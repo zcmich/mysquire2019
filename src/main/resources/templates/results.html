@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Info gotten from homepage</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="'Source dataset URL: ' + ${queryModel.src_sparql}"/>
+<p th:text="'Target dataset URL: ' + ${queryModel.tgt_sparql}"/>
+<p th:text="'Intial Query: ' + ${queryModel.q0}"/>
+<a href="/index">Submit another QueryModel</a>
+</body>
+</html>

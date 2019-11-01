@@ -27,13 +27,13 @@ public class squireController {
     @GetMapping("/index")
     public String sparqlForm(Model model) {
         model.addAttribute("queryModel", new QueryModel());
-        return "index";
+        return "index1";
     }
 
 
     @PostMapping("/submit")
     public String querySubmit(@ModelAttribute QueryModel queryModel) {
-        return "result";
+        return "results";
     }
 
 }
